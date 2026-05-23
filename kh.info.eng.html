@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xatulis Banaki</title>
     <style>
-        /* 1. Define the custom font with the Dropbox link */
+        /* 1. Define the custom font with the relative path */
         @font-face {
             font-family: 'DropboxCustomFont';
             src: url('font.ttf') format('truetype');
@@ -30,56 +30,112 @@
             padding: 20px;
         }
 
-            </style>
+        /* 3. Modern Layout Container matching the Georgian page style */
+        .card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 16px; /* Smooth rounded corners for consistency */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+            max-width: 650px; /* Slightly wider to easily accommodate text content */
+            width: 100%;
+            color: #2d3748; /* Deep charcoal for crisp reading */
+            line-height: 1.6;
+        }
+
+        /* Typography Styling for Content */
+        h3 {
+            font-size: 1.4rem;
+            color: #1a202c;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+        }
+
+        .highlight-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 5px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        li::before {
+            content: "✓";
+            color: #10b981; /* Clean green checkmark */
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .bullet-list li::before {
+            content: "•";
+            color: #4b5563;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="card">
+        <h3>Streams of July 2026:</h3>
         
+        <p>• July 2 - July 8 (opening of the camp)</p>
+        <p>• July 8 - July 14</p>
+        <p>• July 14 - July 20</p>
+        <p>• July 20 - July 26</p>
+        <p>• July 26 - July 31 (camp closure)</p>
+
+        <div class="highlight-box">
+            <p><strong>Age category:</strong> 11 years old - 17 years old.</p>
+            <p><strong>Location:</strong> Daba Bakuriani</p>
+            <p><strong>Price:</strong> 780 GEL</p>
+        </div>
+
+        <p><strong>Price includes:</strong> Check in, Transportation (from Tbilisi-Bakuriani-Tbilisi), Hotel accommodation, triple feeding, Developmental activities according to the age planned by the psychologist (with practical exercises, individually and in a group), Fun and entertaining activities led by the team leader, Informative events (every evening), reflection, Photo-video shooting (And placement in a social space with the consent of the child/adult and the parent), Primary medical care.</p>
+
+        <p style="margin-top: 20px; font-weight: bold;">It's worth to relax in the mountains during summer holidays, Borjomi municipality, Daba Bakuriani, is a great place for this, Where you'll be found:</p>
         
-        <h3>
-                Streams of July 2026:
+        <ul>
+            <li>A safe environment</li>
+            <li>Organized hotel with three meals</li>
+            <li>A variety of activities are planned for the camp</li>
+            <li>Children/adults will practice different skills in the camp</li>
+        </ul>
 
-July 2 - July 8 (opening of the camp)
-July 8 - July 14
-July 14 - July 20
-July 20 - July 26
-July 26 - July 31 (camp closure)
- Age category: 11 years old. -17 years old.
- Location: Daba Bakuriani
- Price: 780 GEL
-Price includes:
- Check in
- Transportation (from Tbilisi-Bakuriani-Tbilisi)
-Hotel accommodation
-triple feeding
- Developmental activities according to the age planned by the psychologist (with practical exercises, individually and in a group)
- Fun and entertaining activities led by the team leader
- Informative events (every evening)
-reflection
- Photo-video shooting
-(And placement in a social space with the consent of the child/adult and the parent).
+        <p style="font-weight: bold; margin-bottom: 5px;">For example:</p>
+        <ul class="bullet-list">
+            <li>Critical thinking ‼️⁉️</li>
+            <li>Teamwork</li>
+            <li>Leadership</li>
+            <li>Activating creative skills</li>
+        </ul>
 
- Primary medical care in case of worms
+        <p style="font-weight: bold; margin-bottom: 5px;">Participants will also be able to:</p>
+        <ul class="bullet-list">
+            <li>Knowing yourself better and presenting yourself properly to the camp participants (presentation skills)</li>
+            <li>Boosting self-esteem</li>
+            <li>Away from the family, adapting and adjusting to a new environment (Camp psychologist will help according to the necessities)</li>
+            <li>Participants will only use phones in their free time as agreed, for necessary parent contact and/or for camp assignments</li>
+        </ul>
+    </div>
 
-It's worth to relax in the mountains during summer holidays, Borjomi municipality, Daba Bakuriani, is a great place for this 
-Where you'll be found:
-✓A safe environment
-✓ Organized hotel with three meals
-✓ A variety of activities are planned for the camp
-✓ Children/adults will practice different skills in the camp
-For example:
-• Critical thinking !! ️!?️ ️ ️️
-• Teamwork 
-• Leadership 
-• Activating creative skills
-
-Participants will also be able to:
-• Knowing yourself better and presenting yourself properly to the camp participants (presentation skills),
-• Boosting self-esteem 
-• Minors will be able to
-Away from the family, adapting and adjusting to a new environment
-(Camp psychologist will help according to the necessities).
-• Participants will only use phones in their free time as agreed, for necessary parent contact and/or for camp assignments
-
-
-                </h3>
-        
+</body>
+</html>
