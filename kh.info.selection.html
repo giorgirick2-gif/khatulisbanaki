@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xatulis Banaki - Choose Language</title>
+    <style>
+        /* 1. Define the custom font with the relative path */
+        @font-face {
+            font-family: 'DropboxCustomFont';
+            src: url('font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* 2. Global Resets & Modern Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f4f7f6; /* Soft, modern light-grey background */
+            font-family: 'DropboxCustomFont', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Centers the card vertically on screen */
+            padding: 20px;
+        }
+
+        /* 3. The Container Card */
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px; /* Smooth rounded corners for the outer card layout */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        /* 4. Button Stack Container */
+        .btn-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 14px; /* Clean spacing between language options */
+        }
+
+        /* 5. Shared Button Base Styles */
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 30px; /* Capsule shape button */
+            font-weight: bold;
+            font-size: 1.05rem;
+            transition: all 0.2s ease-in-out; /* Smooth hover transition */
+        }
+
+        /* Clean, Distinct Colors for Languages */
+        .lang-eng-btn {
+            background-color: #3b82f6; /* Premium Soft Blue */
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .lang-eng-btn:hover {
+            background-color: #2563eb;
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .lang-geo-btn {
+            background-color: #ef4444; /* Vivid Georgian Red */
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        .lang-geo-btn:hover {
+            background-color: #dc2626;
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+        }
+
+        /* Hover animation triggers */
+        .btn-link:hover {
+            transform: translateY(-2px); /* Lifts up slightly */
+        }
+
+        .btn-link:active {
+            transform: translateY(0); /* Sinks back down when clicked */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Vertically stacked button container -->
+        <div class="btn-stack">
+            <!-- English Information Button -->
+            <a class="btn-link lang-eng-btn" href="kh.info.eng.html">
+                ინფორმაცია (ინგლისური) - Information (English)
+            </a>
+
+            <!-- Georgian Information Button -->
+            <a class="btn-link lang-geo-btn" href="kh.info.geo.html">
+                ინფორმაცია (ქართული) - Information (Georgian)
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

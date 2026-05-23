@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xatulis Banaki</title>
+    <style>
+        /* 1. Define the custom font with the relative path */
+        @font-face {
+            font-family: 'DropboxCustomFont';
+            src: url('font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* 2. Global Resets & Modern Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f4f7f6; /* Soft, modern light-grey background */
+            font-family: 'DropboxCustomFont', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Centers the card vertically on screen */
+            padding: 20px;
+        }
+
+        /* 3. The Container Card */
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px; /* Smooth rounded corners for the outer card layout */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        /* 4. Heading Style */
+        h1 {
+            color: #2d3748; /* Deep charcoal for better legibility */
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* 5. Image Wrapper & Square Scaling (No Border Radius) */
+        .image-container {
+            width: 100%;
+            border-radius: 0; /* Removed border-radius entirely for sharp, crisp corners */
+            overflow: hidden;
+            margin-bottom: 25px;
+            aspect-ratio: 1 / 1; /* Forces the container to be perfectly square */
+            box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps image proportions pristine while filling the square */
+            display: block;
+            border-radius: 0; /* Ensures the image itself has no border radius */
+        }
+
+        /* 6. Button Stack Container */
+        .btn-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* Adds clean spacing between the buttons */
+        }
+
+        /* 7. Shared Button Base Styles */
+        .btn-link {
+            display: inline-flex; /* Uses flexbox to align icon and text side-by-side */
+            align-items: center;  /* Centers them vertically */
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 30px; /* Capsule shape button */
+            font-weight: bold;
+            font-size: 1.05rem;
+            transition: all 0.2s ease-in-out; /* Smooth hover transition */
+        }
+
+        /* Brand Colors & Shadows */
+        .fb-btn {
+            background-color: #1877f2; /* Official Facebook Blue */
+            box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+        }
+
+        .fb-btn:hover {
+            background-color: #166fe5;
+            box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
+        }
+
+        .wa-btn {
+            background-color: #25d366; /* Official WhatsApp Green */
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .wa-btn:hover {
+            background-color: #20ba5a;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .gmail-btn {
+            background-color: #ea4335; /* Official Gmail Red */
+            box-shadow: 0 4px 12px rgba(234, 67, 53, 0.3);
+        }
+
+        .gmail-btn:hover {
+            background-color: #d93025;
+            box-shadow: 0 6px 20px rgba(234, 67, 53, 0.4);
+        }
+
+        .register-btn {
+            background-color: #a855f7; /* Modern Vibrant Purple */
+            box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+        }
+
+        .register-btn:hover {
+            background-color: #9333ea;
+            box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
+        }
+
+        .info-btn {
+            background-color: #0ea5e9; /* Sleek Info Blue/Cyan */
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+        }
+
+        .info-btn:hover {
+            background-color: #0284c7;
+            box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+        }
+
+        /* Hover animation triggers */
+        .btn-link:hover {
+            transform: translateY(-2px); /* Lifts up slightly */
+        }
+
+        .btn-link:active {
+            transform: translateY(0); /* Sinks back down when clicked */
+        }
+
+        /* Icon Styling */
+        .btn-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px; /* Space between the icon and the text */
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Xatulis Banaki</h1>
+        
+        <div class="image-container">
+            <img src="https://scontent.fkut1-1.fna.fbcdn.net/v/t39.30808-6/701681185_122171291114897835_7530836381881785090_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1IJMDQ_mvyIQ7kNvwGYXme1&_nc_oc=Adrr8PsD5KXpHcfGPCZtIxO1EiKmaxKG0Xasi5vg0zHnJF17ULxjMjLGGhwPGbwLLiIbUg3zR8Q75kxA4mjK-_Cf&_nc_zt=23&_nc_ht=scontent.fkut1-1.fna&_nc_gid=OmivW2t9qkTkpm6skptkyA&_nc_ss=7b289&oh=00_Af6rhhzAJoXDh8dEc8t-fioaPBaiNJ_mR8ImpbRoM4Zulw&oe=6A168624" 
+                 alt="Xatulis Banaki Square Profile Image">
+        </div>
+
+        <!-- Vertically stacked button container -->
+        <div class="btn-stack">
+            <!-- Facebook Button -->
+            <a class="btn-link fb-btn" href="https://www.facebook.com/people/%E1%83%AE%E1%83%90%E1%83%A2%E1%83%A3%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%91%E1%83%90%E1%83%9C%E1%83%90%E1%83%99%E1%83%98/61576935070047/">
+                <img class="btn-icon" src="https://facebook.com/favicon.ico" alt="Facebook Icon">
+                ფეისბუქი - Facebook
+            </a>
+
+            <!-- WhatsApp Number Button (pointing to local xati.whatsapp.html page) -->
+            <a class="btn-link wa-btn" href="kh.num.html">
+                <img class="btn-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Icon">
+                ნომერი - Number
+            </a>
+
+            <!-- Gmail Button -->
+            <a class="btn-link gmail-btn" href="https://mail.google.com/mail/?fs=1&to=khatuliscamp@gmail.com&tf=cm">
+                <img class="btn-icon" src="https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png" alt="Gmail Icon">
+                მეილი - Mail
+            </a>
+
+            <!-- Register Button (Google Forms) -->
+            <a class="btn-link register-btn" href="https://docs.google.com/forms/d/1Wwr5ghQsjXYm8afDT0dm-6Ew6RUaKsRIzyteQxNg3-c/">
+                რეგისტრაცია - Register
+            </a>
+
+            <!-- Info Selection Button -->
+            <a class="btn-link info-btn" href="kh.info.selection.html">
+                ინფორმაცია - Information
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
