@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xatulis Banaki</title>
     <style>
-        /* 1. Define the custom font with the Dropbox link */
+        /* 1. Define the custom font with the relative path */
         @font-face {
             font-family: 'DropboxCustomFont';
             src: url('font.ttf') format('truetype');
@@ -30,9 +30,71 @@
             padding: 20px;
         }
 
-   </style>
+        /* 3. The Container Card matching the main layout */
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px; /* Smooth rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        /* 4. Heading Style */
+        h3 {
+            color: #2d3748; /* Deep charcoal for better legibility */
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            word-break: break-word;
+        }
+
+        /* 5. Shared Button Base Styles matching the original design */
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 30px; /* Capsule shape button */
+            font-weight: bold;
+            font-size: 1.05rem;
+            width: 100%;
+            transition: all 0.2s ease-in-out; /* Smooth hover transition */
+        }
+
+        /* Blue Copy Button Styling */
+        .copy-btn {
+            background-color: #1877f2; /* Shared Blue Accent */
+            box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+        }
+
+        .copy-btn:hover {
+            background-color: #166fe5;
+            box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
+        }
+
+        /* Hover animation triggers */
+        .btn-link:hover {
+            transform: translateY(-2px); /* Lifts up slightly */
+        }
+
+        .btn-link:active {
+            transform: translateY(0); /* Sinks back down when clicked */
+        }
+    </style>
 </head>
 <body>
+
+    <div class="card">
+        <h3>ნომერი - Number: +995 598 17 67 64</h3>
         
-        
-<h3>ნომერი - Number: +995 598 17 67 64</h3>
+        <!-- Blue Copy Button redirecting to copy processing page -->
+        <a class="btn-link copy-btn" href="kh.num.copy.html">
+            კოპირება - Copy
+        </a>
+    </div>
+
+</body>
+</html>
