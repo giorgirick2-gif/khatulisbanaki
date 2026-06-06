@@ -5,50 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xatulis Banaki</title>
     <style>
-        /* 1. Define the custom font */
-        @font-face {
-            font-family: 'DropboxCustomFont';
-            src: url('font.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        /* 2. Global Resets */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #f4f7f6;
-            font-family: 'DropboxCustomFont', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        /* 3. The Container Card */
-        .card {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            text-align: center;
-            max-width: 450px;
-            width: 100%;
-        }
-
-        /* 4. Heading Style */
-        h1 {
-            color: #2d3748;
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-        }
-
-        /* 5. Image/Video Container */
+        /* [Insert all your previous CSS here] */
         .image-container {
             width: 100%;
             border-radius: 0;
@@ -56,87 +13,31 @@
             margin-bottom: 25px;
             aspect-ratio: 1 / 1;
             box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+            background-color: #000;
         }
-
-        /* Corrected CSS to target the video element */
-        .image-container video {
+        .image-container iframe {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            display: block;
+            border: none;
         }
-
-        /* 6. Button Stack Container */
-        .btn-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        /* 7. Shared Button Base Styles */
-        .btn-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 30px;
-            font-weight: bold;
-            font-size: 1.05rem;
-            transition: all 0.2s ease-in-out;
-        }
-
-        /* Brand Colors */
-        .fb-btn { background-color: #1877f2; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3); }
-        .wa-btn { background-color: #25d366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); }
-        .gmail-btn { background-color: #ea4335; box-shadow: 0 4px 12px rgba(234, 67, 53, 0.3); }
-        .register-btn { background-color: #a855f7; box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3); }
-        .info-btn { background-color: #0ea5e9; box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3); }
-
-        .btn-link:hover { transform: translateY(-2px); }
-        .btn-link:active { transform: translateY(0); }
-
-        .btn-icon {
-            width: 18px;
-            height: 18px;
-            margin-right: 10px;
-            object-fit: contain;
-        }
+        /* [Add your other styles below] */
     </style>
 </head>
 <body>
-
     <div class="card">
         <h1>Khatulis Banaki</h1>
         
         <div class="image-container">
-            <video src="https://khatulisbanaki.onrender.com/video01.mp4" playsinline controls>
-                Your browser does not support the video tag.
-            </video>
+            <iframe src="kh.rufplayer.flash.swf.html" allowfullscreen></iframe>
         </div>
 
         <div class="btn-stack">
-            <a class="btn-link fb-btn" href="https://www.facebook.com/people/Khatulis-Banaki/61576935070047/">
-                <img class="btn-icon" src="https://facebook.com/favicon.ico" alt="Facebook Icon">
-                ფეისბუქი - Facebook
-            </a>
-            <a class="btn-link wa-btn" href="kh.num.html">
-                <img class="btn-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Icon">
-                ნომერი - Number
-            </a>
-            <a class="btn-link gmail-btn" href="https://mail.google.com/mail/?fs=1&to=khatuliscamp@gmail.com&tf=cm">
-                <img class="btn-icon" src="https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png" alt="Gmail Icon">
-                მეილი - Mail
-            </a>
-            <a class="btn-link register-btn" href="https://docs.google.com/forms/d/1Wwr5ghQsjXYm8afDT0dm-6Ew6RUaKsRIzyteQxNg3-c/">
-                რეგისტრაცია - Register
-            </a>
-            <a class="btn-link info-btn" href="kh.info.selection.html">
-                ინფორმაცია - Information
-            </a>
+            <a class="btn-link fb-btn" href="https://www.facebook.com/people/Khatulis-Banaki/61576935070047/">ფეისბუქი - Facebook</a>
+            <a class="btn-link wa-btn" href="kh.num.html">ნომერი - Number</a>
+            <a class="btn-link gmail-btn" href="https://mail.google.com/mail/?fs=1&to=khatuliscamp@gmail.com&tf=cm">მეილი - Mail</a>
+            <a class="btn-link register-btn" href="https://docs.google.com/forms/d/1Wwr5ghQsjXYm8afDT0dm-6Ew6RUaKsRIzyteQxNg3-c/">რეგისტრაცია - Register</a>
+            <a class="btn-link info-btn" href="kh.info.selection.html">ინფორმაცია - Information</a>
         </div>
     </div>
-
 </body>
 </html>
