@@ -27,14 +27,17 @@
         }
 
         .left-col { flex: 1; }
-        .right-col { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+        .right-col { flex: 1; display: flex; flex-direction: column; gap: 16px; }
 
         h1 { color: #2d3748; font-size: 2.2rem; margin-bottom: 20px; }
 
+        /* Restored glow/shadow for the video container */
         .image-container {
             width: 100%;
             overflow: hidden;
             aspect-ratio: 1 / 1;
+            background: #fff;
+            border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
@@ -49,17 +52,19 @@
             padding: 12px 24px;
             border-radius: 30px;
             font-weight: bold;
-            transition: transform 0.2s;
+            transition: all 0.2s ease-in-out;
         }
 
         .btn-link:hover { transform: translateY(-2px); }
-        .btn-icon { width: 18px; height: 18px; margin-right: 10px; object-fit: contain; }
 
-        .fb-btn { background-color: #1877f2; }
-        .wa-btn { background-color: #25d366; }
-        .gmail-btn { background-color: #ea4335; }
-        .register-btn { background-color: #a855f7; }
-        .info-btn { background-color: #0ea5e9; }
+        /* Restored specific glow/shadow effects for each button */
+        .fb-btn { background-color: #1877f2; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3); }
+        .wa-btn { background-color: #25d366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); }
+        .gmail-btn { background-color: #ea4335; box-shadow: 0 4px 12px rgba(234, 67, 53, 0.3); }
+        .register-btn { background-color: #a855f7; box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3); }
+        .info-btn { background-color: #0ea5e9; box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3); }
+
+        .btn-icon { width: 18px; height: 18px; margin-right: 10px; object-fit: contain; }
     </style>
 </head>
 <body>
