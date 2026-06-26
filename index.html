@@ -27,11 +27,22 @@
         }
 
         .left-col { flex: 1; }
-        .right-col { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+        
+        .right-col { 
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 16px; 
+            margin-top: 50px; 
+        }
 
-        h1 { color: #2d3748; font-size: 2.2rem; margin-bottom: 20px; }
+        /* Styles for the logo image */
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
 
-        /* Restored glow/shadow for the video container */
         .image-container {
             width: 100%;
             overflow: hidden;
@@ -57,7 +68,6 @@
 
         .btn-link:hover { transform: translateY(-2px); }
 
-        /* Restored specific glow/shadow effects for each button */
         .fb-btn { background-color: #1877f2; box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3); }
         .wa-btn { background-color: #25d366; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); }
         .gmail-btn { background-color: #ea4335; box-shadow: 0 4px 12px rgba(234, 67, 53, 0.3); }
@@ -71,7 +81,9 @@
 
     <div class="wrapper">
         <div class="left-col">
-            <h1>Khatulis Banaki</h1>
+            <!-- Logo image replaced the text header -->
+            <img src="/logo.jpg" alt="Logo" class="logo">
+            
             <div class="image-container">
                 <video src="https://khatulisbanaki.onrender.com/video01.mp4" playsinline controls>
                     Your browser does not support the video tag.
